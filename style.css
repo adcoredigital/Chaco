@@ -1,0 +1,137 @@
+/* ===== Chaco: colours & fonts (change here to restyle the whole site) ===== */
+:root {
+  --espresso: #2b1d17;   /* text */
+  --gold: #d4962f;       /* Shih Tzu gold */
+  --gold-dark: #b17b1f;
+  --ribbon: #4f7cac;     /* topknot ribbon blue */
+  --blush: #f7e8dc;      /* soft section background */
+  --white: #fffdfb;
+  --radius: 22px;
+}
+
+html { scroll-behavior: smooth; scroll-padding-top: 80px; }
+
+body {
+  font-family: 'Nunito', system-ui, sans-serif;
+  color: var(--espresso);
+  background: var(--white);
+  line-height: 1.7;
+  font-size: 1.05rem;
+}
+
+h1, h2, h3, .navbar-brand { font-family: 'Baloo 2', 'Nunito', sans-serif; }
+
+a { color: var(--ribbon); }
+:focus-visible { outline: 3px solid var(--ribbon); outline-offset: 3px; }
+
+/* ===== Navigation ===== */
+.chaco-nav {
+  background: rgba(255, 253, 251, .92);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid #efe2d6;
+}
+.navbar-brand { font-weight: 800; font-size: 1.7rem; color: var(--espresso); }
+.chaco-nav .nav-link { color: var(--espresso); font-weight: 700; padding: .5rem 1rem; }
+.chaco-nav .nav-link:hover { color: var(--gold-dark); }
+.chaco-nav .nav-blog {
+  background: var(--ribbon);
+  color: #fff;
+  border-radius: 999px;
+  margin-left: .4rem;
+}
+.chaco-nav .nav-blog:hover, .chaco-nav .nav-blog.active { background: var(--espresso); color: #fff; }
+
+/* ===== Hero ===== */
+.hero {
+  padding: 8rem 0 5rem;
+  background:
+    radial-gradient(circle at 85% 15%, #fbe3b8 0, transparent 40%),
+    var(--white);
+}
+.hero-hello { font-family: 'Baloo 2', sans-serif; font-size: 1.6rem; margin: 0; color: var(--gold-dark); }
+.hero-name {
+  font-weight: 800;
+  font-size: clamp(4.5rem, 14vw, 9rem);
+  line-height: .9;
+  letter-spacing: -.02em;
+  margin: 0 0 1rem;
+}
+.hero-lead { font-size: 1.25rem; max-width: 30em; margin-bottom: 1.8rem; }
+
+/* The one memorable shape: a photo in an arch with a ribbon */
+.arch {
+  position: relative;
+  width: min(100%, 420px);
+  aspect-ratio: 3 / 4;
+  margin: 0 auto;
+  border-radius: 999px 999px var(--radius) var(--radius);
+  overflow: hidden;
+  border: 8px solid #fff;
+  box-shadow: 14px 14px 0 var(--gold);
+  animation: settle .9s ease-out both;
+}
+.arch img { width: 100%; height: 100%; object-fit: cover; }
+@keyframes settle { from { opacity: 0; transform: translateY(24px) rotate(-2deg); } }
+
+/* ===== Buttons ===== */
+.btn-chaco {
+  background: var(--gold); color: var(--espresso); font-weight: 800;
+  border: 0; border-radius: 999px; padding: .7rem 1.7rem;
+}
+.btn-chaco:hover { background: var(--espresso); color: #fff; }
+.btn-chaco-outline {
+  border: 2px solid var(--espresso); color: var(--espresso); font-weight: 800;
+  border-radius: 999px; padding: .62rem 1.6rem; background: transparent;
+}
+.btn-chaco-outline:hover { background: var(--espresso); color: #fff; }
+
+/* ===== Sections ===== */
+.section { padding: 5.5rem 0; }
+.section-tint { background: var(--blush); }
+.section-title { font-weight: 800; font-size: clamp(2rem, 5vw, 3rem); margin-bottom: 1.5rem; }
+
+.about-img { border-radius: var(--radius); width: 100%; aspect-ratio: 4 / 5; object-fit: cover; }
+.facts { margin-top: 1.5rem; }
+.fact {
+  background: var(--blush); border-radius: 16px; padding: .8rem 1rem;
+  height: 100%; line-height: 1.35;
+}
+.fact strong { display: block; color: var(--gold-dark); font-family: 'Baloo 2', sans-serif; }
+
+.gallery-img {
+  width: 100%; aspect-ratio: 1 / 1; object-fit: cover;
+  border-radius: 18px; transition: transform .3s;
+}
+.gallery-img:hover { transform: scale(1.03); }
+
+/* ===== Contact form ===== */
+.form-control { border-radius: 14px; border: 2px solid #ead9c9; padding: .7rem 1rem; background: #fff; }
+.form-control:focus { border-color: var(--ribbon); box-shadow: none; }
+.form-label { font-weight: 700; }
+
+/* ===== Footer ===== */
+.footer { background: var(--espresso); color: #f3e6d9; padding: 2.5rem 0; }
+.footer .btn-chaco-outline { border-color: #f3e6d9; color: #f3e6d9; }
+.footer .btn-chaco-outline:hover { background: #f3e6d9; color: var(--espresso); }
+
+/* ===== Blog page ===== */
+.blog-header { padding: 8rem 0 2.5rem; text-align: center; background: radial-gradient(circle at 15% 20%, #fbe3b8 0, transparent 40%), var(--white); }
+.blog-title { font-size: clamp(3rem, 9vw, 5.5rem); }
+.blog-wrap { max-width: 760px; padding-bottom: 4rem; }
+.post { padding: 2.5rem 0; border-bottom: 2px dashed #ead9c9; }
+.post:last-child { border-bottom: 0; }
+.post h2 { font-weight: 800; font-size: 2rem; }
+.post-date { color: var(--gold-dark); font-weight: 700; margin: 1.2rem 0 0; }
+.post-img { width: 100%; max-height: 460px; object-fit: cover; border-radius: var(--radius); }
+.video-frame { position: relative; aspect-ratio: 16 / 9; border-radius: var(--radius); overflow: hidden; background: #000; }
+.video-frame iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+
+@media (max-width: 991px) {
+  .hero { padding-top: 6.5rem; }
+  .chaco-nav .nav-blog { margin: .3rem 0; display: inline-block; }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .arch { animation: none; }
+  .gallery-img { transition: none; }
+}
