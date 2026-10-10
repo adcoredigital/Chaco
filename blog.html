@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Chaco's Shih Tzu puppy blog.">
+  <title>Chaco's Blog | Shih Tzu Puppy Stories</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="blog-page">
+  <nav class="navbar navbar-expand-lg fixed-top puppy-navbar" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand brand-mark" href="index.html"><span class="brand-paw">🐾</span> Chaco</a>
+      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+              aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="index.html#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="index.html#contact">Contact</a></li>
+          <li class="nav-item"><a class="nav-link active blog-nav-btn" href="blog.html">Blog <span>↗</span></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="blog-hero">
+    <div class="container">
+      <div class="blog-hero-inner">
+        <span class="eyebrow">Chaco's journal</span>
+        <h1>Stories from a<br><em>fluffy little life.</em></h1>
+        <p>Training adventures, grooming days, favorite treats, puppy thoughts and plenty of adorable chaos.</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="blog-content section-padding">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Featured post -->
+        <div class="col-lg-8">
+          <article class="featured-post">
+            <div class="post-image">
+              <img src="images/blog-1.jpg" alt="Cute dog sitting outdoors" data-placeholder="Blog photo 1">
+              <span class="post-category">Lifestyle</span>
+            </div>
+            <div class="post-body">
+              <div class="post-meta">October 06, 2026 · 6 min read</div>
+              <h2>A perfect day in the life of a Shih Tzu</h2>
+              <p>
+                From the first sleepy stretch in the morning to the final blanket
+                burrow at night, here's what a truly excellent puppy day looks like.
+              </p>
+              <a href="#" class="read-more" data-video="https://www.youtube.com/watch?v=jNQXAC9IVRw" data-post="A perfect day in the life of a Shih Tzu">Read story <span>→</span></a>
+              <div class="post-full" hidden>
+                <p>Write the full story here. Tell what happened, how Chaco reacted and what made you smile.</p>
+                <p>Add as many paragraphs as you like. Photos and YouTube videos show up in the pop-up automatically.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="col-lg-4">
+          <aside class="blog-sidebar">
+            <div class="sidebar-card">
+              <span class="eyebrow">Hello, friend!</span>
+              <h3>Welcome to Chaco's journal.</h3>
+              <p>This is the place for longer stories, helpful puppy notes and little moments that deserve more than a photo caption.</p>
+              <a href="index.html#contact" class="btn btn-puppy btn-sm">Say hello</a>
+            </div>
+
+            <div class="sidebar-card categories-card">
+              <span class="eyebrow">Explore</span>
+              <a href="#">Puppy Life <span>→</span></a>
+              <a href="#">Grooming <span>→</span></a>
+              <a href="#">Training <span>→</span></a>
+              <a href="#">Food & Treats <span>→</span></a>
+            </div>
+          </aside>
+        </div>
+
+        <!-- Post cards -->
+        <div class="col-md-6">
+          <article class="post-card">
+            <div class="post-image">
+              <img src="images/blog-2.jpg" alt="Small puppy" data-placeholder="Blog photo 2">
+              <span class="post-category">Grooming</span>
+            </div>
+            <div class="post-body">
+              <div class="post-meta">September 28, 2026 · 4 min read</div>
+              <h3>Keeping those fluffy locks happy & healthy</h3>
+              <p>A simple grooming routine for a comfortable, camera-ready Shih Tzu.</p>
+              <a href="#" class="read-more" data-post="Keeping those fluffy locks happy & healthy">Read story <span>→</span></a>
+              <div class="post-full" hidden>
+                <p>Write the full story here. Tell what happened, how Chaco reacted and what made you smile.</p>
+                <p>Add as many paragraphs as you like. Photos and YouTube videos show up in the pop-up automatically.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6">
+          <article class="post-card">
+            <div class="post-image">
+              <img src="images/blog-3.jpg" alt="Happy dog outside" data-placeholder="Blog photo 3">
+              <span class="post-category">Adventures</span>
+            </div>
+            <div class="post-body">
+              <div class="post-meta">September 15, 2026 · 5 min read</div>
+              <h3>Why every puppy needs a little outdoor adventure</h3>
+              <p>Sniffing, exploring and soaking up sunshine—three of Chaco's favorite things.</p>
+              <a href="#" class="read-more" data-video="https://youtu.be/jNQXAC9IVRw" data-post="Why every puppy needs a little outdoor adventure">Read story <span>→</span></a>
+              <div class="post-full" hidden>
+                <p>Write the full story here. Tell what happened, how Chaco reacted and what made you smile.</p>
+                <p>Add as many paragraphs as you like. Photos and YouTube videos show up in the pop-up automatically.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6">
+          <article class="post-card">
+            <div class="post-image">
+              <img src="images/blog-4.jpg" alt="Cute dog portrait" data-placeholder="Blog photo 4">
+              <span class="post-category">Training</span>
+            </div>
+            <div class="post-body">
+              <div class="post-meta">August 30, 2026 · 7 min read</div>
+              <h3>Five tiny training wins that deserve a treat</h3>
+              <p>Small steps, lots of patience and a very persuasive puppy face.</p>
+              <a href="#" class="read-more" data-post="Five tiny training wins that deserve a treat">Read story <span>→</span></a>
+              <div class="post-full" hidden>
+                <p>Write the full story here. Tell what happened, how Chaco reacted and what made you smile.</p>
+                <p>Add as many paragraphs as you like. Photos and YouTube videos show up in the pop-up automatically.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="col-md-6">
+          <article class="post-card">
+            <div class="post-image">
+              <img src="images/blog-5.jpg" alt="Dog relaxing" data-placeholder="Blog photo 5">
+              <span class="post-category">Treats</span>
+            </div>
+            <div class="post-body">
+              <div class="post-meta">August 18, 2026 · 3 min read</div>
+              <h3>The unofficial guide to winning the treat game</h3>
+              <p>Strategic staring, adorable head tilts and other highly advanced techniques.</p>
+              <a href="#" class="read-more" data-post="The unofficial guide to winning the treat game">Read story <span>→</span></a>
+              <div class="post-full" hidden>
+                <p>Write the full story here. Tell what happened, how Chaco reacted and what made you smile.</p>
+                <p>Add as many paragraphs as you like. Photos and YouTube videos show up in the pop-up automatically.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-inner">
+        <a class="brand-mark" href="index.html"><span class="brand-paw">🐾</span> Chaco</a>
+        <p>Made with love, treats & tiny paws.</p>
+        <div class="social-links">
+          <a href="index.html#contact">Contact</a>
+          <a href="index.html">Home</a>
+        </div>
+      </div>
+      <div class="copyright">© <span id="year"></span> Chaco's Little World. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <div class="modal fade" id="storyModal" tabindex="-1" aria-labelledby="storyTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content story-modal">
+        <div class="modal-header border-0">
+          <h2 class="modal-title h3" id="storyTitle"></h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img id="storyImg" src="" alt="" class="story-img">
+          <div id="storyText"></div>
+          <div id="storyVideo" class="video-frame mt-3" hidden></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
