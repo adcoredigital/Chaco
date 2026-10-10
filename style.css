@@ -588,7 +588,7 @@ h1 em, h2 em, h3 em {
   align-items: flex-end;
   padding: 150px 0 80px;
   background:
-    linear-gradient(120deg, rgba(253,232,218,0.96), rgba(255,250,244,0.80)),
+    linear-gradient(120deg, rgba(253,232,218,0.85), rgba(255,250,244,0.55)),
     url("images/blog-banner.jpg") center/cover,
     #fde8da;
 }
